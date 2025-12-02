@@ -1,0 +1,259 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Ben Haddou Travel — Moroccan Guided Tours</title>
+  <meta name="description" content="Ben Haddou Travel — Authentic Moroccan guided tours to historic sites, cultural experiences, and bespoke itineraries." />
+  <link rel="stylesheet" href="css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="branding">
+        <h1 class="logo">Ben Haddou Travel</h1>
+        <p class="tagline">Authentic Moroccan journeys — History, culture, guides you can trust</p>
+      </div>
+
+      <button id="nav-toggle" class="nav-toggle" aria-expanded="false" aria-controls="main-nav">Menu</button>
+
+      <nav id="main-nav" class="nav" aria-label="Main navigation">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#destinations">Destinations</a></li>
+          <li><a href="#tours">Tours</a></li>
+          <li><a href="#guides">Guides</a></li>
+          <li><a href="#contact">Contact / Book</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="hero-overlay">
+        <div class="container hero-content">
+          <h2>Explore Morocco with Local Guides</h2>
+          <p>From the blue alleys of Chefchaouen to the ksars of the High Atlas — handcrafted itineraries, small groups, authentic experiences.</p>
+          <div class="hero-cta">
+            <a class="btn" href="#tours">See Our Tours</a>
+            <a class="btn btn-outline" href="#contact">Contact Us</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="destinations" class="container section">
+      <header class="section-header">
+        <h3>Featured Historic Sites</h3>
+        <p>Handpicked sites that showcase Morocco's rich history and architecture.</p>
+      </header>
+
+      <div class="grid cards">
+        <article class="card">
+          <img src="assets/images/ait-benhaddou.jpg" alt="Ait Benhaddou" />
+          <div class="card-body">
+            <h4>Ait Benhaddou</h4>
+            <p>UNESCO ksar and cinematic landmark on the old caravan route to the Sahara.</p>
+            <button class="btn btn-sm" data-tour="Ait Benhaddou Express">View Trip</button>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="assets/images/marrakech-medina.jpg" alt="Marrakech Medina" />
+          <div class="card-body">
+            <h4>Marrakech Medina</h4>
+            <p>Vibrant souks, Bahia Palace, and the famous Jemaa el-Fnaa square.</p>
+            <button class="btn btn-sm" data-tour="Marrakech Highlights">View Trip</button>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="assets/images/fes-tanneries.jpg" alt="Fes Tanneries" />
+          <div class="card-body">
+            <h4>Fes Tanneries</h4>
+            <p>Ancient medina with traditional leather tanneries and historic madrasas.</p>
+            <button class="btn btn-sm" data-tour="Fes Cultural Walk">View Trip</button>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="assets/images/chefchaouen.jpg" alt="Chefchaouen" />
+          <div class="card-body">
+            <h4>Chefchaouen</h4>
+            <p>The iconic blue city tucked in the Rif mountains — photography heaven.</p>
+            <button class="btn btn-sm" data-tour="Chefchaouen Day Trip">View Trip</button>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="assets/images/hassan-ii.jpg" alt="Hassan II Mosque" />
+          <div class="card-body">
+            <h4>Hassan II Mosque</h4>
+            <p>Imposing ocean-front mosque in Casablanca with intricate tilework.</p>
+            <button class="btn btn-sm" data-tour="Coastal Wonders">View Trip</button>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="assets/images/volubilis.jpg" alt="Volubilis" />
+          <div class="card-body">
+            <h4>Volubilis</h4>
+            <p>Roman ruins near Meknes with well-preserved mosaics and architecture.</p>
+            <button class="btn btn-sm" data-tour="Ancient Wonders">View Trip</button>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="tours" class="section section-alt">
+      <div class="container">
+        <header class="section-header">
+          <h3>Ready-made Tours & Custom Trips</h3>
+          <p>Choose a curated itinerary or ask us to craft a private tour to suit your pace and interests.</p>
+        </header>
+
+        <div class="grid tours">
+          <div class="tour">
+            <h4>Marrakech to Ait Benhaddou — 3 Days</h4>
+            <p class="muted">Price from €220 per person • Private or small group</p>
+            <ul>
+              <li>Guided visit of Ait Benhaddou</li>
+              <li>Overnight in traditional riad</li>
+              <li>Optional Atlas Mountains trek</li>
+            </ul>
+            <button class="btn" data-tour="Marrakech to Ait Benhaddou — 3 Days">Book Now</button>
+          </div>
+
+          <div class="tour">
+            <h4>Fes Cultural Experience — 2 Days</h4>
+            <p class="muted">Price from €180 per person</p>
+            <ul>
+              <li>Guided medina tour</li>
+              <li>Visit to tanneries and madrasas</li>
+              <li>Traditional dinner with a local family</li>
+            </ul>
+            <button class="btn" data-tour="Fes Cultural Experience — 2 Days">Book Now</button>
+          </div>
+
+          <div class="tour">
+            <h4>Chefchaouen Photo Day Trip — 1 Day</h4>
+            <p class="muted">Price from €90 per person</p>
+            <ul>
+              <li>Scenic drive with stops</li>
+              <li>Walking tour of the blue alleyways</li>
+              <li>Local guide & lunch</li>
+            </ul>
+            <button class="btn" data-tour="Chefchaouen Photo Day Trip — 1 Day">Book Now</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="guides" class="container section">
+      <header class="section-header">
+        <h3>Our Guides</h3>
+        <p>Local guides, licensed and fluent in multiple languages — ready to make your trip unforgettable.</p>
+      </header>
+
+      <div class="grid team">
+        <div class="team-member card">
+          <img src="assets/images/guide-1.jpg" alt="Guide Hamid" />
+          <div class="card-body">
+            <h4>Hamid</h4>
+            <p class="muted">Senior cultural guide — Arabic, French, English</p>
+          </div>
+        </div>
+
+        <div class="team-member card">
+          <img src="assets/images/guide-2.jpg" alt="Guide Salma" />
+          <div class="card-body">
+            <h4>Salma</h4>
+            <p class="muted">History specialist — Arabic, Spanish, English</p>
+          </div>
+        </div>
+
+        <div class="team-member card">
+          <img src="assets/images/guide-3.jpg" alt="Guide Omar" />
+          <div class="card-body">
+            <h4>Omar</h4>
+            <p class="muted">Desert & trekking guide — Arabic, French, English</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact-section">
+      <div class="container">
+        <header class="section-header">
+          <h3>Contact & Bookings</h3>
+          <p>Reach us directly — phone, email, or use the booking form below. We reply within 24 hours.</p>
+        </header>
+
+        <div class="contact-grid">
+          <div class="contact-info card">
+            <h4>Contact Info</h4>
+            <p><strong>Phone:</strong> <a href="tel:+212600000000">+212 6 00 00 00 00</a></p>
+            <p><strong>Email:</strong> <a href="mailto:info@benhaddoutravel.com">info@benhaddoutravel.com</a></p>
+            <p><strong>WhatsApp:</strong> <a href="https://wa.me/212600000000" target="_blank" rel="noopener">+212 6 00 00 00 00</a></p>
+            <p class="muted">Office hours: Mon–Sat 09:00–18:00 (GMT+1)</p>
+          </div>
+
+          <form id="booking-form" class="card booking-form" aria-label="Booking form">
+            <h4>Send a Booking Request</h4>
+
+            <label>
+              Your Name
+              <input type="text" name="name" required />
+            </label>
+
+            <label>
+              Email
+              <input type="email" name="email" required />
+            </label>
+
+            <label>
+              Phone
+              <input type="tel" name="phone" />
+            </label>
+
+            <label>
+              Select Trip
+              <select name="trip" id="trip-select">
+                <option value="">—I want to be advised —</option>
+                <option>Marrakech to Ait Benhaddou — 3 Days</option>
+                <option>Fes Cultural Experience — 2 Days</option>
+                <option>Chefchaouen Photo Day Trip — 1 Day</option>
+                <option>Ait Benhaddou Express</option>
+                <option>Custom Private Trip</option>
+              </select>
+            </label>
+
+            <label>
+              Message
+              <textarea name="message" rows="5" required placeholder="Tell us your dates, group size, and any preferences."></textarea>
+            </label>
+
+            <div class="form-actions">
+              <button type="submit" class="btn">Send Request</button>
+              <button type="button" id="contact-mailto" class="btn btn-outline">Email Us</button>
+            </div>
+
+            <p id="form-status" class="form-status" aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; <span id="year"></span> Ben Haddou Travel — All rights reserved.</p>
+      <p class="muted">Made with passion in Morocco — follow us: <a href="#" aria-label="Instagram">Instagram</a> • <a href="#" aria-label="Facebook">Facebook</a></p>
+    </div>
+  </footer>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,99 @@
+:root{
+  --morocco-red:#9b2b2b;
+  --deep-green:#0b5e45;
+  --sand:#f5e7d7;
+  --gold:#c69a4e;
+  --muted:#666;
+  --max-width:1100px;
+  --radius:10px;
+  --transition:200ms ease;
+  --hero-height:60vh;
+  font-family: "Cairo", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+}
+
+*{box-sizing:border-box}
+html,body{height:100%;margin:0;color:#222;background:#fff;line-height:1.45}
+.container{max-width:var(--max-width);margin:0 auto;padding:1.25rem}
+
+.site-header{
+  background:linear-gradient(180deg, rgba(0,0,0,0.25), transparent);
+  position:sticky;top:0;z-index:50;
+  backdrop-filter: blur(4px);
+}
+.header-inner{display:flex;align-items:center;gap:1rem;justify-content:space-between;padding:.75rem 0}
+.branding .logo{font-family:"Playfair Display", serif;margin:.125rem 0;color:var(--morocco-red);font-size:1.25rem}
+.tagline{margin:0;font-size:.85rem;color:var(--muted)}
+
+.nav{display:flex}
+.nav ul{display:flex;gap:1rem;margin:0;padding:0;list-style:none;align-items:center}
+.nav a{text-decoration:none;color:#222;padding:.4rem .6rem;border-radius:6px;transition:var(--transition)}
+.nav a:hover{background:rgba(0,0,0,0.05)}
+
+.nav-toggle{display:none;border:0;background:transparent;padding:.5rem;font-size:1rem}
+
+.hero{
+  height:var(--hero-height);
+  background-image:linear-gradient(rgba(6,9,12,0.25),rgba(6,9,12,0.25)), url('/assets/images/hero.jpg');
+  background-size:cover;background-position:center;display:flex;align-items:center;color:#fff;
+}
+.hero-overlay{width:100%}
+.hero-content{padding:3rem 1rem}
+.hero-content h2{font-size:2.1rem;margin:0 0 .5rem;font-family:"Playfair Display",serif}
+.hero-content p{margin:0 0 1rem;color:rgba(255,255,255,0.9)}
+.hero-cta .btn{margin-right:.5rem}
+
+/* Sections */
+.section{padding:3rem 0}
+.section-alt{background:var(--sand);padding:2.5rem 0}
+.section-header h3{margin:0 0 .25rem;color:var(--deep-green)}
+.section-header p{margin:0 0 1rem;color:var(--muted)}
+
+/* Grid */
+.grid{display:grid;gap:1rem}
+.cards{grid-template-columns:repeat(auto-fit,minmax(220px,1fr))}
+.cards .card{background:#fff;border-radius:var(--radius);overflow:hidden;box-shadow:0 6px 18px rgba(16,24,40,0.08)}
+.cards img{width:100%;height:160px;object-fit:cover;display:block}
+.card-body{padding:1rem}
+.btn{display:inline-block;background:var(--morocco-red);color:#fff;padding:.6rem .9rem;border-radius:8px;border:0;text-decoration:none;cursor:pointer}
+.btn:hover{opacity:.95}
+.btn-outline{background:transparent;border:1px solid rgba(0,0,0,0.08);color:var(--morocco-red)}
+.btn-sm{padding:.4rem .6rem;font-size:.9rem}
+
+/* tours */
+.tours{grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
+.tour{background:#fff;padding:1rem;border-radius:10px;box-shadow:0 6px 20px rgba(16,24,40,0.06)}
+.tour h4{margin:0 0 .25rem}
+.tour .muted{color:var(--muted);font-size:.95rem}
+
+/* team */
+.team{grid-template-columns:repeat(auto-fit,minmax(180px,1fr))}
+.team-member img{height:180px;object-fit:cover;width:100%}
+
+/* contact */
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
+.contact-info{padding:1rem}
+.booking-form{padding:1rem}
+.booking-form label{display:block;margin-bottom:.75rem;font-size:.95rem}
+.booking-form input, .booking-form select, .booking-form textarea{width:100%;padding:.6rem;border-radius:8px;border:1px solid #ddd;margin-top:.35rem}
+.form-actions{display:flex;gap:.5rem;align-items:center;margin-top:.5rem}
+.form-status{margin-top:.6rem;color:var(--deep-green)}
+
+.site-footer{background:#111;color:#fff;padding:1rem 0;margin-top:2rem}
+.footer-inner{display:flex;justify-content:space-between;align-items:center;gap:1rem}
+
+/* small screens */
+@media (max-width:800px){
+  .contact-grid{grid-template-columns:1fr}
+  .hero{height:50vh}
+  .nav{display:none}
+  .nav-toggle{display:block}
+  .hero-content h2{font-size:1.6rem}
+  .grid{gap:.85rem}
+}
+
+/* simple decorative Moroccan tile like accent (small) */
+.section:before{
+  content:"";
+  display:block;height:8px;margin-bottom:1rem;background:linear-gradient(90deg, rgba(198,154,78,0.45), rgba(11,94,69,0.45));
+  border-radius:8px;
+}
